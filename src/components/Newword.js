@@ -3,7 +3,7 @@ import axios from "axios";
 
 function Newword() {
 
-    const [word2, setWord] = useState([]);
+    const [word, setWord] = useState([]);
 
   useEffect(()=>{
 
@@ -17,21 +17,14 @@ function Newword() {
 
   }, [])
 
-  // function trial(){
+  // You may wish to write a function here later tht checks for condition and error messages
 
-  // }
-
-  // console.log(word2)
+  console.log(word)
   return ( <>
-        <div>
-          {
-          (word2.length > 0) && (<h1>{word2[0].word}</h1>)
-            
-          }
-          
+        <div> 
+          {(word.length > 0) && (<h1>{word[0].word} means {word[0].definition} </h1>)} 
         </div>
-
-          </> );
+        </> );
 }
 
 export default Newword;
