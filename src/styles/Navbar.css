@@ -1,0 +1,7 @@
+.navigation{
+  background-color: blue;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-around;
+}
