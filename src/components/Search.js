@@ -10,7 +10,6 @@ function Search() {
 
     useEffect(()=>{
 
-      // https://api.dictionaryapi.dev/api/v2/entries/en/<word>
       axios.get(`https://api.datamuse.com/sug?s=${searching}`)
       .then(response => {
         setSearchword(response.data)
@@ -23,9 +22,7 @@ function Search() {
      
         console.log(searchword)
       
-  // function searchSuggestion(search){
-
-  // }
+    const listwords = searchword.map(word=><h4>{word.word}</h4>)
 
   return ( 
     <>
@@ -35,7 +32,7 @@ function Search() {
           <input type="text" value={searching} onChange={(e)=>{setSearching(e.target.value)}}/>
           <input type="submit" value="Click"/>
       </label>
-      {/* {searchSuggestion(search)} */}
+      {listwords}
       </form>
     </>
    );
