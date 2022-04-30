@@ -18,11 +18,11 @@ const [instantword, setInstantword] = useState([]);
     dataApi();
   }, []);
 
-console.log(instantword)
+// console.log(instantword)
   return ( 
     <div>
-      <h1>Hello</h1>
-       <h1>{instantword[0].word} </h1>
+      <h3>Word of the day</h3>
+       <h4><em>{instantword[0].word}</em>- definition: {instantword[0].definition} </h4>
     </div>
    );
 }

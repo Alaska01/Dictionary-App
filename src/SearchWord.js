@@ -42,7 +42,7 @@ function SearchWord() {
     axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchword}`)
     .then(response=> {
       setWordexplanation(response.data)
-
+      console.log(wordexplanation)
       
     }).catch((error)=>{
       console.log(error.message)
