@@ -1,12 +1,13 @@
 import './App.css';
-import Bodycontainer from './components/Bodycontainer';
-import Navbar from './components/Navbar';
+import RandomWord from './RandomWord';
+import SearchWord from './SearchWord';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Bodycontainer />
+      <h1>Hello World</h1>
+      <RandomWord />
+      <SearchWord />
     </div>
   );
 }
